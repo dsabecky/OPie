@@ -35,7 +35,7 @@ function config.open(panel)
 	
 	-- If the panel is offscreen in the AddOns list, both OTC calls above will fail;
 	-- in any case, we want all the children/sibling categories to be visible.
-	local cat, parent = INTERFACEOPTIONS_ADDONCATEGORIES, panel.parent or panel.name
+	--[[local cat, parent = INTERFACEOPTIONS_ADDONCATEGORIES, panel.parent or panel.name
 	local numVisiblePredecessors, parentPanel, lastRelatedPanel = 0
 	for i=1,#cat do
 		local e = cat[i]
@@ -70,7 +70,7 @@ function config.open(panel)
 			InterfaceOptionsFrameAddOnsListScrollBar:SetValue(ofsY)
 			InterfaceOptionsFrame_OpenToCategory(panel)
 		end
-	end
+	end]]--
 	
 	if not panel:IsVisible() then
 		-- I give up.
